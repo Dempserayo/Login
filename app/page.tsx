@@ -11,14 +11,20 @@ export default function Home() {
         className="bg-cover bg-center  w-full h-screen flex flex-row justify-center items-center"
         style={{ backgroundImage: "url(/imagenes/background.svg)" }}
       >
-        <div className="flex flex-row justify-center items-center bg-blue-500 bg-opacity-40 backdrop-blur-sm rounded-3xl shadow-2xl border-2 border-blue-500 border-opacity-40 w-[440px] h-[450px] ">
+        <div className="flex flex-row justify-center items-center md:bg-blue-500 md:bg-opacity-40 md:backdrop-blur-sm rounded-3xl md:shadow-2xl md:border-2 md:border-blue-500 border-opacity-40 w-[440px] h-[450px] ">
           <div className="w-full mx-8 mt-12">
-            <span className="font-extrabold text-white ">Your Logo</span>
-            <h1 className="font-extrabold text-2xl text-white">Login</h1>
+            <div className="max-[900px]:-mt-40 max-[900px]:my-20">
+              <span className="font-extrabold text-white max-[800px]:flex max-[800px]:justify-center">
+                Your Logo
+              </span>
+              <h1 className="font-extrabold text-2xl text-white max-[800px]:flex max-[800px]:justify-center max-[800px]:text-4xl ">
+                Login
+              </h1>
+            </div>
 
-            <div className="scale-90">
+            <div className="max-[900px]:scale-110 scale-90">
               <div>
-                <p className="text-xs text-white my-2">Email</p>
+                <p className="text-xs text-white font-bold my-2">Email</p>
                 <input
                   placeholder="Email"
                   type="text"
@@ -26,7 +32,7 @@ export default function Home() {
                 ></input>
               </div>
               <div>
-                <p className="text-xs text-white my-2">Password</p>
+                <p className="text-xs text-white font-bold my-2">Password</p>
                 <input
                   placeholder="Password"
                   type="password"
@@ -41,7 +47,7 @@ export default function Home() {
                 Sign In
               </button>
               <div className="flex justify-center ">
-                <button className="h-10 mt-4  rounded-md text-xs scale-75 text-white">
+                <button className="h-10 mt-4  rounded-md text-sm  text-white">
                   or continue with
                 </button>
               </div>
@@ -59,7 +65,7 @@ export default function Home() {
               </div>
 
               <div className="flex justify-center ">
-                <button className="h-10 -mt-4 rounded-md text-xs scale-75 text-white ">
+                <button className="h-10 -mt-4 rounded-md text-xs scale-75 text-white font-bold ">
                   Dont have an account yet? Register for free
                 </button>
               </div>
